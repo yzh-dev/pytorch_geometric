@@ -37,7 +37,6 @@ if __name__ == '__main__':
         cfg.seed = cfg.seed + 1
         seed_everything(cfg.seed)
         auto_select_device()
-        # Set machine learning pipeline
         datamodule = GraphGymDataModule()
         model = create_model()
         # Print model info
